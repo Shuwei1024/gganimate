@@ -37,8 +37,13 @@ p =
   enter_fade() +
   exit_fade()
 
+animate(p, nframes = 24, renderer = gifski_renderer("gganim.gif"))
+
+
+```
+
+```{r}
 gif = animate(p)
-
-
+image_write(gif, path="myanimation.gif")
 ```
 
