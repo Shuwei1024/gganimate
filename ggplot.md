@@ -1,4 +1,4 @@
-Untitled
+gif
 ================
 
 ``` r
@@ -26,5 +26,7 @@ p =
   enter_fade() +
   exit_fade()
 
-gif = animate(p)
+animate(p, nframes = 24, fps = 3, renderer = gifski_renderer("gganim.gif"))
 ```
+
+![](ggplot_files/figure-markdown_github/unnamed-chunk-1-1.gif)
